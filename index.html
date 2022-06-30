@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chawalwit 'Meck' Akarajirathanachot</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/me.png" alt="Chawalwit Akarajirathanachot" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Chawalwit Akarajirathanachot" style="font-size: 100%;">Chawalwit Akarajirathanachot</h1>
+          <p class="title">Student</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:meck22772@gmail.com" class="contact-link">meck22772@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+66829522797" class="contact-link">+66 82-952-2797</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">September 14, 2005</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Si Racha, Chonburi, Thailand</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://facebook.com/Meck.robot" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://github.com/karibura-cyber" class="social-link">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://instagram.com/meck_76268" target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm <b id="age"></b> years old Linux, Robotic, Electronics and Aerospace enthusiast living in Chonburi, Thailand. 
+            I finished primary school in 2018 with quite good results and I'm now learning as secondary school in the <b>Surasakwittayakom School.</b>
+          </p>
+        </section>
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/codewithsadee/vcard-personal-portfolio/master/assets/images/icon-design.svg" alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Microcontroller</h4>
+
+                <p class="service-item-text">
+                  - <b><u>NightGS</u></b> Ground Station for receive data from LoRa based CubeSAT.<br><br>
+                  - <b><u>LECSAT</u></b> Low Energy CubeSAT a CubeSAT project based on Arduino and LoRa. <span style="color: #ff4040;">*Not launch yet*</span><br>
+                  - <b><u>NHSPOT</u></b> BadUSB like Rubber Ducky USB Device for Penetration Testing. it have many more features.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="https://raw.githubusercontent.com/codewithsadee/vcard-personal-portfolio/master/assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Software Development</h4>
+
+                <p class="service-item-text">
+                  - <u>Junior</u> software developer of <b>FOSSA SYSTEM</b>. I develop software for Ground Station.<br><br>
+                  - <u>Senior</u> software developer of <b>IVAO</b>. I develop Aurora software for IVAO Network it's ATC software for control people who are the pilot on FlightSimulator software like XPlane, MSF, P3D<br><br>
+                  <a href="https://pypi.org/project/ivao/" style="color: white; text-decoration: none;" target="_blank">-<u> IVAO Python Library</u></a>
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+        <div class="modal-container" data-modal-container><div class="overlay" data-overlay></div><section class="testimonials-modal"><button class="modal-close-btn" data-modal-close-btn><ion-icon name="close-outline"></ion-icon></button></section></div>
+
+      </article>
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Primary School</h4>
+
+              <span>2012 — 2018</span>
+
+              <p class="timeline-text">
+                I studied in <b>Wat naphrao School</b>, Si Racha, Chonburi, Thailand.<br>
+                At that time I want to be a Programmer I could coding only C and C++ 
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Secondary School</h4>
+
+              <span>2018 - Present</span>
+
+              <p class="timeline-text">
+                I studied in <b>Surasakwittayakom School</b>, Si Racha, Chonburi, Thailand. <br>
+                I start to learn about Robotic and Electronics. I started LECSAT project on Secondary 3.
+              </p>
+
+            </li>
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Programming</h4>
+
+              <span>2015 — Present</span>
+              <p class="timeline-text">
+                <b><u>Programming language</u></b><br>
+                - Python => Networking, Pentesting, Robotic, Data analysis, IOT, Windows Applications, Linux Applications<br>
+                - C => Arduino, Robotic, IOT<br>
+                - LUA => Game development<br>
+                - Javascript (JS) => Normal web responsive<br>
+                - OpenCV => Object tracking, Lane keeping
+                <p>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Web designer</h4>
+
+              <span>2022 — Present</span>
+
+              <p class="timeline-text">
+                WebMaster of IVAO and IVAO Thailand Division.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Penetration and Hacking</h4>
+
+              <span>2019 — 2021</span>
+
+              <p class="timeline-text">
+                - <b><u>NightHawk</u></b> is an 8-members programming and Pentesting team founded in 2020.<br>
+                - <b><u>NHSPOT</u></b> is a BadUSB like Rubber Ducky USB Device for Penetration Testing. it have many more features.<br>
+                - <b><u>NightRF</u></b> is a Radio Frequency jammer, Replay an radio signal, Hijacking radio station.<br>
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects" data-select>
+          <ul class="project-list">
+
+            <li class="project-item  active" >
+              <a href="https://ivao.aero/software/aurora" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/aurora-1.png" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ATC CLIENT: AURORA</h3>
+
+                <p class="project-category">Software development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://pypi.org/project/ivao" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/pypi.jpg" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">IVAO Library for Python</h3>
+
+                <p class="project-category">Software development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://github.com/Karibura-Cyber/DUCO-Wallet-CLI" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/duco.jpg" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">DUCO Wallet CLI</h3>
+
+                <p class="project-category">Software development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active">
+              <a href="https://ivao.aero" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/ivaoweb.jpg" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">IVAO Website</h3>
+
+                <p class="project-category">Web development</p>
+
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script>
+    const day = 24 * 60 * 60 * 1000;
+    const age = document.getElementById("age");
+    
+    round_to = function(precision, value) {
+        value = parseFloat(value);
+        power_of_ten = 10 ** precision;
+        return Math.round(value * power_of_ten) / power_of_ten;
+    }
+    
+    day_diff = function(d1, d2) {
+        /* totally not borrowed from kristians page */
+        return (d2 - Date.parse(d1)) / day;
+    }
+    
+    function update_age() {
+        age.innerHTML = round_to(8, day_diff('Sep 14, 2005 05:25:00', new Date()) / 365);
+    }
+    
+    update_age();
+    setInterval(function() {
+        update_age();
+    }, 100)
+    </script>
+</body>
+
+</html>
